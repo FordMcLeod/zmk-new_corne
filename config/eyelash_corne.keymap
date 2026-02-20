@@ -65,17 +65,17 @@
         default_layer {
             display-name = "CANARY";
             bindings = <
-&kp ESCAPE  &kp W  &kp L  &kp Y            &kp P  &kp B                               &kp UP                &kp Z                     &kp F  &kp O      &kp U    &kp SQT   &kp BSPC
-&kp TAB     &kp C  &kp R  &kp S            &kp T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M                     &kp N  &kp E      &kp I    &kp A     &kp ENTER
-&kp LCTRL   &kp Q  &kp J  &kp V            &kp D  &kp K        &kp SPACE              &kp DOWN              &kp X                     &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
-                          &commandPalette  &mo 2  &lt 3 SPACE                                               &mt LEFT_SHIFT BACKSPACE  &mo 1  &kp RALT
+&kp ESCAPE  &kp W  &kp L  &kp Y            &kp P  &kp B                                     &mmv MOVE_UP                     &kp Z                     &kp F  &kp O      &kp U    &kp SQT   &kp BSPC
+&kp TAB     &kp C  &kp R  &kp S            &kp T  &kp G                     &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp M                     &kp N  &kp E      &kp I    &kp A     &kp ENTER
+&kp LCTRL   &kp Q  &kp J  &kp V            &kp D  &kp K        &kp SPACE                    &mmv MOVE_DOWN                   &kp X                     &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
+                          &commandPalette  &mo 2  &lt 3 SPACE                                                                &mt LEFT_SHIFT BACKSPACE  &mo 1  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NAVBT {
-            display-name = "SYMBOL";
+            display-name = "NAVOUT";
             bindings = <
 &trans  &out OUT_TOG  &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp PAGE_UP    &kp AMPS  &kp UP_ARROW  &kp LPAR   &kp RPAR  &kp BSPC
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp BSLH  &kp GRAVE
@@ -87,9 +87,9 @@
         };
 
         numsym {
-            display-name = "Fn";
+            display-name = "NUMSYM";
             bindings = <
-&studio_unlock  &trans      &kp N7        &kp N8  &kp N9  &kp MINUS                                &mmv MOVE_UP                     &trans         &trans     &trans                 &trans             &trans                 &kp BACKSPACE
+&studio_unlock  &trans      &kp N7        &kp N8  &kp N9  &kp MINUS                                &mmv MOVE_UP                     &kp TILDE      &kp GRAVE  &trans                 &trans             &trans                 &kp BACKSPACE
 &trans          &kp PERIOD  &kp N4        &kp N5  &kp N6  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader    &kp MINUS  &kp LEFT_PARENTHESIS   &kp LBKT           &kp LS(LEFT_BRACKET)   &kp F12
 &trans          &kp ENTER   &kp NUMBER_1  &kp N2  &kp N3  &kp N0     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp BACKSLASH  &kp SEMI   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp RIGHT_GUI
                                           &trans  &trans  &trans                                                                    &trans         &trans     &trans
@@ -101,10 +101,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp K_BACK       &kp C_PLAY_PAUSE  &kp K_FORWARD    &kp N9           &kp N0    &kp BSPC
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN          &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                         &kp F14       &trans        &trans                                                                          &kp INS          &kp DEL           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
