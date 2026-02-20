@@ -7,7 +7,7 @@ layers:
   - Y
   - P
   - B
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Z
   - F
   - O
@@ -20,9 +20,9 @@ layers:
   - S
   - T
   - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB1'
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - M
   - N
   - E
@@ -36,7 +36,7 @@ layers:
   - D
   - K
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - X
   - H
   - {t: ',', s: <}
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-command$$
   - '&commandPalette'
-  - Fn
+  - NUMSYM
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - SYMBOL
+  - NAVOUT
   - $$mdi:apple-keyboard-option$$
-  SYMBOL:
+  NAVOUT:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - '@'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  NUMSYM:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
@@ -106,8 +106,8 @@ layers:
   - {t: '9', s: (}
   - {t: '-', s: _}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -155,9 +155,9 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
+  - BACK
+  - PLAY PAUSE
+  - FORWARD
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -190,7 +190,7 @@ layers:
   - RGB BRD
   - END
   - PG DN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F14
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - INS
